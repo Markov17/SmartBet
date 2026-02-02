@@ -1,0 +1,26 @@
+value-bets-analyzer/          # repo root (your repository name)
+├── README.md                 # Main description, installation, usage, etc.
+├── LICENSE                   # e.g., MIT (copy from https://choosealicense.com/)
+├── .gitignore                # Ignore unnecessary files (Python template)
+├── requirements.txt          # Dependencies: pandas, sqlite3 (built-in), etc.
+├── setup.py or pyproject.toml # Optional: if you want to package the project
+├── src/                      # Main code (best practice for larger projects)
+│   ├── __init__.py
+│   ├── database.py           # Functions to create/connect/insert into DB
+│   ├── odds_fetcher.py       # Scripts to fetch odds (API or CSV)
+│   ├── value_calculator.py   # Value bet calculation logic
+│   └── utils.py              # Helper functions (e.g., team name normalization)
+├── data/                     # Data (DO NOT commit large files!)
+│   ├── raw/                  # Downloaded CSVs (e.g., football-data.co.uk)
+│   ├── processed/            # Cleaned data or final DB
+│   └── value_bets.db         # Your SQLite file (gitignore if it's large)
+├── notebooks/                # Jupyter for exploration and prototyping
+│   ├── 01_exploratory.ipynb
+│   ├── 02_value_calc_example.ipynb
+│   └── archive/              # Legacy/old notebooks
+├── scripts/                  # Executable scripts (for automation)
+│   └── daily_update.py       # e.g., fetch new odds and calculate values
+├── config/                   # Configuration
+│   └── config.yaml           # API keys, paths, etc. (gitignore if it has secrets)
+└── tests/                    # Unit tests (optional but recommended)
+    └── test_value_calc.py

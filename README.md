@@ -2,25 +2,19 @@
 Value bet tools
 # Value Bets Analyzer
 
-Projeto para identificar **value bets** em apostas desportivas usando SQLite + Python.
+Project to identify value bets in sports betting using SQLite + Python.
 
-## Funcionalidades
-- Armazenamento de jogos e odds em SQLite
-- Cálculo de value = (prob_real * odd) - 1
-- Filtro de bets com EV positivo
 
-## Instalação
-1. Clone o repo: `git clone https://github.com/teuuser/value-bets-analyzer.git`
-2. Instala dependências: `pip install -r requirements.txt`
-3. Corre o exemplo: `python src/value_calculator.py`
+Features:
+Storage of matches and odds in SQLiteValue calculation = $(prob\_real \times odd) - 1$Filtering for positive EV (Expected Value) bets
 
-## Dependências
-- Python 3.10+
-- pandas
-- pyyaml (para config)
+Installation:
+Clone the repo: git clone https://github.com/youruser/value-bets-analyzer.gitInstall 
 
-## Dados
-- Usa datasets free: football-data.co.uk, The Odds API (free tier)
+dependencies: pip install -r requirements.txtRun the example: python src/value_calculator.pyDependenciesPython 3.10+pandaspyyaml (for config)
 
-## Licença
+Data:
+Uses free datasets: football-data.co.uk, The Odds API (free tier)
+
+License
 MIT
